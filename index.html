@@ -1,3 +1,11 @@
+<!-- todo:
+    put info for contact and works
+    add more fun graphics
+    write up an about me
+    create containers to put project pictures in
+    add contact graphics
+    make background more cooler... 
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,16 +22,18 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700" rel="stylesheet">
     <div id = "bcground"><script src="background.js"></script></div>  
 </head>
-<body> 
+<body onload="name()"> 
     <nav>
         <ul>
-        <li id="name">Vikhyat Modgil</li>
-        <li id="work">Works</li>
-        <li id="contact">Contact</li>
+        <li id="name" onclick="name()">Vikhyat Modgil</li>
+        <li id="work" onclick="works()">Works</li>
+        <li id="contact" onclick="contact()">Contact</li>
     </ul>
     </nav>
-    <img id="face" src="face.jpg" alt="Vikhyat Modgil Picture">
-    <h1 id="intro">I’m Vikhyat Modgil, programer and a student currently studying computer science at San Diego State University</h1>
+    <img id="face" src="face.jpg" alt="Vikhyat Modgil Picture" class="intro">
+    <p class="intro" id="tagLine">I’m Vikhyat Modgil, programer and a student currently studying computer science at San Diego State University</p>
+    <p class="works" id="workInfo">this is all of my works</p>
+    <p class="contact" id="contactInfo">this is my contact info</p>
 </body>
 <footer>
 </footer>

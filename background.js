@@ -1,7 +1,7 @@
 var totalStars = screen.height/8;
 var rocketlocation = 0;
 var starMovement = 0;
-var velocity = .05;
+var velocity = .01;
 function setup() {
     createCanvas(window.innerWidth,window.innerHeight);
     arrayStars = [];
@@ -12,22 +12,22 @@ function setup() {
   }
 function twinkleStars(){
     for(var i = 0; i <= totalStars; i++){
-        ellipse(arrayStars[i][0],arrayStars[i][1],2,2);
+        ellipse(arrayStars[i][0],arrayStars[i][1],3,3);
     }
     for(var j = 0; j <= totalStars/50; j++){
         frameRate(12);
         var currentStar = Math.floor(random(totalStars));
-        ellipse(arrayStars[currentStar][0],arrayStars[currentStar][1],random(5),random(5));
+        ellipse(arrayStars[currentStar][0],arrayStars[currentStar][1],random(6),random(6));
     }
     //movenment effect for the stars
     for(var i=0; i<=totalStars; ++i){
         arrayStars[i][0] = (arrayStars[i][0]+starMovement);
     }
     starMovement =starMovement + velocity;
-    if(starMovement >= 5){
+    if(starMovement >= 1){
         velocity = -velocity;
     }
-    if(starMovement <= -5){
+    if(starMovement <= -1){
         velocity = -velocity;
     }
 }

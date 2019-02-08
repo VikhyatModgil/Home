@@ -36,7 +36,8 @@ nav{
   height: auto;
   width: 10%;
 }
-h1{
+#tagLine, #contactInfo,#workInfo{
+  font-size: 2em;
   position:fixed;
   text-align: center;
   margin: 5%;
