@@ -37,7 +37,7 @@ nav{
   width: 10%;
 }
 #tagLine, #contactInfo,#workInfo{
-  font-size: 2em;
+  font-size: 1em;
   position:fixed;
   text-align: center;
   margin: 5%;
