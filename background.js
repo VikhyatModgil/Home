@@ -3,7 +3,7 @@ var rocketlocation = 0;
 var starMovement = 0;
 var velocity = .01;
 function setup() {
-    createCanvas(window.innerWidth,window.innerHeight);
+    createCanvas(screen.width,screen.height);
     arrayStars = [];
     for(var i=0; i<=totalStars; ++i){
         arrayStars.push([random(-width/2,width+10) + starMovement,random(height)]);

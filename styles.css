@@ -36,6 +36,16 @@ nav{
   height: auto;
   width: 10%;
 }
+#workpic{
+  position:fixed;
+  right: 47%;
+  top:25%;
+}
+#contactpic{
+  position:fixed;
+  right: 47%;
+  top:30%;
+}
 #tagLine, #contactInfo,#workInfo{
   font-size: 1em;
   position:fixed;
@@ -48,6 +58,32 @@ nav{
   left: 20%;
   right:20%;
   top:25%;
+}
+#resume{
+  font-size: 1em;
+  position:fixed;
+  text-align: center;
+  margin: 5%;
+  padding: 1%;
+  border: none;
+  border-radius: 15px;
+  color: rgb(255, 0, 0);
+  background-color:rgba(104, 40, 96, 0.322);
+  right:41%;
+  top:40%;
+}
+#resume:hover{
+  font-size: 1em;
+  position:fixed;
+  text-align: center;
+  margin: 5%;
+  padding: 1%;
+  border: none;
+  border-radius: 15px;
+  color: rgb(255, 0, 0);
+  background-color:rgba(104, 40, 96, 0.514);
+  right:41%;
+  top:40%;
 }
 .content{
   color:white;
